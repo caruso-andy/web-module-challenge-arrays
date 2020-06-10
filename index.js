@@ -79,8 +79,8 @@ Your function should remove a flavor from the end of the array and console.log t
 For example removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]*/ 
 
 function removeLastFlavor(arr){
-        arr.pop;
-        console.log(arr);
+    arr.pop();
+    console.log(arr);
 }
 removeLastFlavor(originalFlavors);
 
@@ -93,12 +93,10 @@ Your function should accept:
 
 For example, getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully. */
 
-function getFlavorByIndex(/*code here*/){
-
-    /*code here*/
-
-}
-
+function getFlavorByIndex(arr, ind){
+    console.log(arr[ind]);
+        }
+getFlavorByIndex(originalFlavors, 2);
 /* Task 5: As corporate wants to add more and more flavors to their lineup, they've realized that they need to remove flavors based on flavor name, as opposed to just arbitrarily removing the first or last flavor. Your task is to get an index by flavor name, and remove that flavor from the array. 
 
 Your function should accept: 
